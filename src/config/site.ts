@@ -99,9 +99,9 @@ export const site: {
 export const logos = {
   header: "", // 상단 메뉴바 왼쪽 로고
   hero: "", // 홈 화면 가운데 큰 로고
-  pageHero: "", // 각 페이지 상단(교회소개·예배안내 등) 로고
-  footer: "", // 맨 아래 푸터 로고
-  card: "", // 홈 화면 아래 4개 바로가기 카드 아이콘
+  pageHero: "none", // 각 페이지 상단(교회소개·예배안내 등) 로고
+  footer: "none", // 맨 아래 푸터 로고
+  card: "none", // 홈 화면 아래 4개 바로가기 카드 아이콘
   pastor: "", // 목회자 카드의 십자가 마크
   notFound: "", // 404 페이지 아이콘
 };
