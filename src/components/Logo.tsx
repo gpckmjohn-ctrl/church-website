@@ -30,4 +30,6 @@ export default function Logo({
       />
     );
   }
+  // 빈칸("")이면 기본 금색 십자가를 그림
+  return <Cross w={cross.w} h={cross.h} bar={cross.bar} className={className} />;
 }
