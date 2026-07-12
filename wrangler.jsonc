@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers 정적 사이트 배포 설정
+  // npm run build 로 생성된 out 폴더를 정적 파일로 서빙합니다.
+  "name": "church-website",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
