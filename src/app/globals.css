@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* 색상 토큰 → bg-gold, text-deep, bg-cream 처럼 사용 */
+  --color-gold: #b8960c;
+  --color-gold-light: #d4af37;
+  --color-deep: #1a1a2e;
+  --color-deeper: #0f0f1e;
+  --color-cream: #faf8f3;
+  --color-warm: #f5f0e8;
+  --color-ink: #2a2a2a;
+  --color-muted: #6b6b6b;
+  --color-line: rgba(184, 150, 12, 0.25);
+
+  /* 폰트 토큰 → font-serif-kr, font-sans-kr, font-display */
+  --font-serif-kr: var(--font-noto-serif-kr);
+  --font-sans-kr: var(--font-noto-sans-kr);
+  --font-display: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-noto-sans-kr), system-ui, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
+
+/* 격자 배경(히어로/페이지 헤더용) */
+.grid-overlay {
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(184, 150, 12, 0.04) 40px, rgba(184, 150, 12, 0.04) 41px),
+    repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(184, 150, 12, 0.04) 40px, rgba(184, 150, 12, 0.04) 41px);
+}
+
+/* 등장 애니메이션 */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fadeUp 0.8s ease both;
+}
